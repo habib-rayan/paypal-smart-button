@@ -4,12 +4,14 @@ $(document).ready(function(){
     $('.pay_amount').on('keyup',function(){
         var amount = $(this).val();
         $('.amount').val(amount);
+        $('.payable_amount').text(amount);
     })
 
     $('.default-amount').on('click',function(){
         var amount = $(this).data('amount');
         $(this).addClass('active').siblings().removeClass('active');
         $('.amount').val(amount);
+        $('.payable_amount').text(amount);
     })
 })
 

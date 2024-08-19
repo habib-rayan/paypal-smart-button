@@ -5,10 +5,15 @@ $(document).ready(function(){
         var amount = $(this).val();
         $('.amount').val(amount);
     })
+
+    $('.default-amount').on('click',function(){
+        var amount = $(this).data('amount');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.amount').val(amount);
+    })
 })
 
 function paypButton() {
-    var amt = document.getElementById("amount").value;
     paypal.Buttons({
         createOrder: function(data, actions) {
         var amt = document.getElementById("amount").value;

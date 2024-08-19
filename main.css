@@ -59,3 +59,9 @@ body {
 .default-amount.active {
     background: #c4c4c4;
 }
+
+@media only screen and (max-width:767px) {
+    .default-amount {
+        padding: 10px 28px;
+    }
+}

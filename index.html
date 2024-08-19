@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=AYiezxUbBFQ1RrbxJ3zm9bq4xZ-eSXc8p9uvnt4KKSlYQ9cIKSOyOaOHU4ScGNAgiALyz-liK6UyDcYB&currency=USD&enable-funding=venmo&disable-funding=paylater"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="qr-code">
+        <div class="qr-code-wrap">
+            <h2 class="qr-code-heading">QR Code Generator</h2>
+            <input type="number" class="pay_amount" id="pay_amount" value="100">
+            <input type="hidden" class="amount" id="amount" value="100">
+            <div data-cart-total id="paypal-button-container" style="max-width:350px;margin:0 auto;"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

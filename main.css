@@ -66,9 +66,19 @@ body {
     font-weight: 900;
     margin-bottom: 10px;
 }
-
+.logo {
+    max-width: 160px;
+    margin-top: 12px;
+}
 @media only screen and (max-width:767px) {
     .default-amount {
         padding: 10px 28px;
+    }
+    .logo {
+        max-width: 80px;
+        margin-top: 0;
+    }
+    .qr-code-heading {
+        margin-bottom: 5px;
     }
 }
